@@ -7,9 +7,9 @@
 
 int main(){
 
-char buf[35];
+char buf[73];
 int tube = open("fictub",O_RDONLY);
-read(tube,buf,35);
+read(tube,buf,73);
 printf("J'ai reçu %s\n",buf);
 close(tube);
 return 0;
