@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
   /* Création fichier FIFO */
   mkfifo("fictub",mode);
   int tub = open("fictub",O_WRONLY);
-  write(tub,"Bonjour tout le monde !",35);
+  write(tub,"Bonjour tout le monde !",73);
   close(tub);
 
 return 0;
